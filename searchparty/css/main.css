@@ -1,0 +1,137 @@
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+@font-face { font-family: "fgbr"; src: url("../fonts/fgbr.ttf"); }
+
+/*html { 
+  background-image: url(../img/background.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+#wrapper { position: relative; width: 100%; height: 100%; opacity: 0; }
+
+#squares { width: 100%; height: 100%; z-index: 0; }
+
+#squares .square { 
+	width: calc(100%/4); 
+	height: calc(100%/4); 
+	float: left; }
+
+	#squares .static { 
+	width: calc(100%/4); 
+	height: calc(100%/4); 
+	float: left; }
+
+/*#squares .square:hover { background-color: grey; }*/
+
+.square.leo1 {
+    background: url("../img/leo1.png") center center no-repeat;
+    background-size: 60% auto;
+     transform: rotate(-45deg)
+}
+
+.square.leo2 {
+    background: url("../img/leo2.png") center center no-repeat;
+    background-size: 60% auto;
+      transform: rotate(45deg);
+}
+
+.square.leo3 {
+    background: url("../img/leo3.png") center center no-repeat;
+    background-size: 60% auto;
+    transform: rotate(-45deg)
+}
+
+.square.leo4 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+
+}
+
+/*.square.leo1:hover, .square.leo3:hover {
+    background: url("../img/leo1.png") center center no-repeat;
+    background-size: 60% auto;
+    transform: rotate(-30deg)
+}
+
+.square.leo2:hover {
+    background: url("../img/leo2.png") center center no-repeat;
+    background-size: 60% auto;
+    transform: rotate(30deg);
+}*/
+
+
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+    background-size: 100% 100%;
+/*    background-color: #000000;*/
+}
+
+/*TEXT GOES HERE*/
+.fixedsquare { 
+	width: calc((100% / 4)*2); 
+	height: calc((100% / 4)*2);
+	z-index: 1; 
+	/*margin-left: 25%;
+	margin-right: 25%;
+	margin-top: ;
+	margin-bottom: ;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	background-image: url("../img/text.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+    background-size: 110% auto;
+
+
+}
+
+/*.fullscreen-video {
+  position: absolute;
+  display:none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+/*@media (min-aspect-ratio: 16/9) {
+  .square.video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .sqaure.video {
+    width: 300%;
+    left: -100%;
+  }
+}*/
+
+
+
+
+
+
+
+
