@@ -1,0 +1,214 @@
+
+#cursor {
+  animation: blinker 1s step-end infinite; 
+  //you can change 'step-end' to 'linear' for smooth transition
+}
+
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.google.com/css?family=Open+Sans:light');
+body {
+        font-family: 'Space Mono', monospace;
+        font-size: 65px;
+        line-height: 1em;
+        font-color: #fff;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2vmin;
+  color: #FFFF43;
+  line-height: 3vmin;
+}
+
+body {
+  background-color: #5AFFFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  overflow: hidden;*/
+}
+
+.strobe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10000;
+  transition:flex .3s;
+  opacity: 0;
+}
+
+.strobeEnd{
+  opacity: 0;
+}
+
+.strobe1{
+  opacity: 1;
+  animation: strobe 480ms steps(1,end) infinite;  
+}
+.strobe2{
+  opacity: 1;
+  animation: strobe 240ms steps(1,end) infinite;  
+}
+.strobe3{
+  opacity: 1;
+  animation: strobe 120ms steps(1,end) infinite;  
+}
+
+.strobe4{
+  opacity: 1;
+  animation: strobe 60ms steps(1,end) infinite;  
+}
+
+.strobe5{
+  opacity: 1;
+  animation: strobe 30ms steps(1,end) infinite;  
+}
+
+@keyframes strobe {
+  50% { background: #5AFFFA; color:white; }
+}
+
+.strobe:after {
+  background-color: #5AFFFA;
+}
+
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+  overflow: hidden;
+}
+
+#container {
+  background-color: #5AFFFA;
+  width: 75vmax;
+  height: auto;
+  padding: 50px;
+/*  padding-top: 0%;*/
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+/*  transform: translateY(10%);*/
+  margin: auto;
+  word-wrap: normal;
+  text-align:center;
+/*  padding: 50px;*/
+  overflow: scroll;
+/*  border: 1px solid #000 ;*/
+/*  top: 25%;*/
+/*  display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+#info {
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  margin: auto;
+  z-index: 10000;
+/*  border: 1px solid #000;*/
+  background: url("") center center no-repeat;
+  background-image: url("./img/question.svg");
+  background-size: 100% auto;
+}
+
+#summary {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0; 
+  bottom: 0;
+  margin: auto;
+  z-index: 9000;
+  background-color: #5AFFFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+  opacity: 0;
+}
+
+.migrainegif {
+  height: 20%;
+  width: 100%;
+  display: block;
+/*  border: 1px solid #000;*/
+  background: url("") center center no-repeat;
+  background-image: url("./img/migraines.gif");
+  background-size: 140% auto;
+}
+
+.migraineinfo {
+  height: auto;
+  width: 50%;
+  text-align: center;
+  display: block;
+/*  border: 1px solid #000;*/
+
+}
+
+.intro {
+  padding-top: 20%;
+}
+
+.inner {
+  text-align:center;
+  display: inline-block;
+}
+
+.letter {
+  width:10vmin;
+}
+
+
+#aura, .aura {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      /*background-color:#5AFFFA;*/
+      background-color:#5AFFFA;
+      box-shadow: 15px 15px 15px 15px #5AFFFA;
+      position:fixed;
+      opacity: 0;
+      animation: aura 0.5s step-end infinite;
+        
+    }
+
+@keyframes aura {  s
+  50% { opacity: 0; }
+}
+
+.blur {
+  -webkit-animation: blur 3s infinite;
+}
+
+@-webkit-keyframes blur {
+  0%, 100%  { -webkit-filter: blur(0px) brightness(none) hue-rotate(0deg) saturate(100); }
+  50% { -webkit-filter: brightness(15) blur(10px) hue-rotate(180deg) saturate(10); }
+}
+
+
+
+
