@@ -1,0 +1,19 @@
+{
+    "name": "Down the Rabbit Hole.",
+    "description": "Watch Alice fall down the Rabbit Hole over and over and over again.",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "incognito": "split",
+    "chrome_url_overrides": {
+        "newtab": "blank.html"
+    }, "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ], "browser_action": {
+        "default_icon": "icon128.png"
+    }, "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }
+}
