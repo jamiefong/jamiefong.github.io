@@ -23,17 +23,27 @@ h2 {font-family: "akzmed"; color: #000000;}
 
 h3 {font-family: "akzbold"; font-size: 23px; line-height: 2em; letter-spacing: 0.1em;}
 
+.wrapper {
+	height: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 
 .name {
 	width: 100%;
-	margin-top: 10%;
+	padding-top: 10%;
+	align-self: auto;
 }
 
 .projects {
 	height: 100%;
 	width: 100%;
+	align-self: center;
 	justify-content: center;
-	align-items: center;
+	align-items: auto;
 	margin-top: 1%;
 }
 
