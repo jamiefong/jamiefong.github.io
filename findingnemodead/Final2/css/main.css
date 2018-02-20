@@ -1,0 +1,31 @@
+html, body { width: 100%; height: 100%; }
+
+#wrapper { position: relative; width: 100%; }
+
+
+#title {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 25px;
+		right: 25px;
+		z-index: 10000;
+		background: url("") center center no-repeat;
+		background-size: 400px auto;
+		background-image: url("../img/nemowhite.png"); 
+		opacity: 0;
+}
+
+
+#next { position: absolute;
+		float:right;
+		width: 5%;
+		height: 50px;
+		bottom: 25px;
+		right: 25px;
+		z-index: 10000;
+		background: url("") center center no-repeat;
+		background-size: 30px auto;
+		background-image: url("../img/fish.png");
+		opacity: 1; 
+}
