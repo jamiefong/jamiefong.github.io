@@ -1,0 +1,542 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face { font-family: "sflight"; src: url("../fonts/SanFranciscoText-Light.otf"); 
+}
+
+@font-face { font-family: "sflighti"; src: url("../fonts/SanFranciscoText-LightItalic.otf"); 
+}
+
+@font-face { font-family: "digi"; src: url("../fonts/digital-7 (mono italic).ttf"); 
+}
+
+h1 {
+  font-family: "sflight";
+  font-size: 2vmin;
+  color: #000;
+}
+
+h2 {
+  font-family: "sflighti";
+  font-size: 2vmin;
+  color: #000;
+}
+
+h3, #question {
+  font-family: "digi";
+  font-size: 10vmin;
+  color: #000;
+}
+
+h4 {
+  font-family: "sflighti";
+  font-size: 4vmin;
+  color: #000;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.contentwrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+/*    border: 1px solid #000;*/
+    position:relative ;
+    z-index: 100;
+}
+
+.gifwrapper, .carewrapper, .excusewrapper {
+  height: calc(100%/6);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+}
+
+.gif {
+  height: calc(100%/6);
+  width: calc(100%/4);
+  background: url("../img/late.gif") center center no-repeat;
+  background-size: 100% auto;
+/*  border: 1px solid #000;*/
+  position: absolute;
+}
+
+.care {
+  height: auto;
+  width: auto;
+/*  border: 1px solid #000;*/
+}
+
+.finalexcusenot ,.finalexcusefair, .finalexcuseenough {
+  height: auto;
+  width: 100%;
+  text-align:center;
+  padding-right: 5vmin;
+  padding-left: 5vmin;
+/*      border: 1px solid #000;*/
+}
+
+.gif:hover {
+  background: url("../img/load.gif") center center no-repeat;
+background-size: 100% auto;
+}
+
+.titlewrapper {
+  height: 5.5vmin;
+  width: calc(100%/4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.buttonswrapper {
+  height: 5.5vmin;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+/*  border: 1px solid #000;*/
+}
+
+.not, .enough, .fair, .again {
+  height: 4.5vmin;
+  width: auto;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4.5vmin; 
+
+}
+
+
+.title {
+  height: auto;
+  width: auto;
+  position: absolute;
+  display: block;
+  text-align: center;
+/*  border: 1px solid #000;*/
+  padding-top: 10px;
+
+}
+
+.quotewrapper {
+  height: 15%;
+  width: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+  position: relative;
+  z-index: 10000;
+  top:-15%;
+
+}
+
+.column-thin {
+  height: 100%;
+  width: 2vmin;
+/*  border: 1px solid #000;*/
+  display: inline-block;
+  float:left;
+
+}
+
+.column-main {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+/*  border: 1px solid #000;*/
+
+}
+
+.quotes {
+  height: auto;
+  width: auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: relative;
+  line-height: 105%;
+/*  border: 1px solid #000;*/
+
+}
+
+.border {
+  height: 50%;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;  
+}
+
+#question {
+  animation: blinker 1s step-end infinite;
+  white-space: nowrap; 
+
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+h1 {
+  font-family: "sflight";
+  font-size: 2em;
+  color: #000;
+}
+
+h2 {
+  font-family: "sflighti";
+  font-size: 2em;
+  color: #000;
+}
+
+h3, #question {
+  font-family: "digi";
+  font-size: 5em;
+  color: #000;
+}
+
+#question {
+  font-size: 1em;
+  white-space: nowrap; 
+}
+
+h4 {
+  font-family: "sflighti";
+  font-size: 4em;
+  color: #000;
+}    
+
+.gifwrapper {
+  height: 15vh;
+  width: 70vw;
+  display: block;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+}
+
+.gif {
+  height: 15vh;
+  width: 70vw;
+  background: url("../img/late.gif") center center no-repeat;
+  background-size: 90% auto;
+/*  border: 1px solid #000;*/
+  position: absolute;
+}
+
+.gif:hover {
+background: url("../img/load.gif") center center no-repeat;
+background-size: 90% auto;
+}
+
+.carewrapper {
+  height: 10vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #FF0000;*/
+}
+
+.care {
+  height: 10vh;
+  width: 85vw;
+  text-align:center;
+/*  border: 1px solid #000;*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh; 
+}
+
+.quotewrapper {
+  height: 15%;
+  width: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+  position: relative;
+  z-index: 10000;
+  top:-15%;
+
+}
+
+
+.quotes {
+  height: auto;
+  width: auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: relative;
+  line-height: 3vh;
+/*  border: 1px solid #000;*/
+
+}
+
+
+.titlewrapper {
+  height: 10vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title {
+  height: 10vh;
+  width: 70vw;
+  position: relative;
+  display: block;
+  text-align: center;
+/*  border: 1px solid #000;*/
+  padding-top: 2vh;
+
+}
+
+.column-thin {
+  height: 100%;
+  width: 2vmin;
+/*  border: 1px solid #000;*/
+  display: inline-block;
+  float:left;
+
+}
+
+.column-main {
+  height: 100%;
+  width: auto;
+  max-width: 70vw;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
+/*  border: 1px solid #000;*/
+
+}
+
+
+.buttonswrapper {
+  height: 20vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+/*  border: 1px solid #000;*/
+}
+
+.not, .enough, .fair, .again {
+  height: 4vh;
+  width: auto;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4vh; 
+
+}
+
+.again {
+  top: 10vh;
+}
+
+.finalexcusenot ,.finalexcusefair, .finalexcuseenough {
+  height: auto;
+  width: 80vw;
+  text-align:center;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  line-height: 5vh;
+/*      border: 1px solid #000;*/
+}
+
+.excusewrapper {
+  height: auto;
+  width: 80vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+h1 {
+  font-family: "sflight";
+  font-size: 3vmin;
+  color: #000;
+}
+
+h2 {
+  font-family: "sflighti";
+  font-size: 3vmin;
+  color: #000;
+}
+
+h3, #question {
+  font-family: "digi";
+  font-size: 12vmin;
+  color: #000;
+}
+
+h4 {
+  font-family: "sflighti";
+  font-size: 8vmin;
+  color: #000;
+}
+
+.gifwrapper {
+  height: 30vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+}
+
+.gif {
+  height: 30vh;
+  width: 50vh;
+  background: url("../img/late.gif") center center no-repeat;
+  background-size: 90% auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+/*  border: 1px solid #000;*/
+  position: absolute;
+}
+
+.gif:hover {
+background: url("../img/load.gif") center center no-repeat;
+background-size: 90% auto;
+}
+
+
+.titlewrapper {
+  height: 10vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+
+}
+
+.title {
+  height: 10vh;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: relative;
+  display: flex;
+  text-align: center;
+/*  border: 1px solid #000;*/
+  padding-top: 2vh;
+
+}
+
+.quotewrapper {
+  height: 17%;
+  width: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 1px solid #000;*/
+  position: relative;
+  z-index: 10000;
+  top:-17%;
+
+}
+
+
+.quotes {
+  height: auto;
+  width: auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: relative;
+  line-height: 3vh;
+/*  border: 1px solid #000;*/
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
